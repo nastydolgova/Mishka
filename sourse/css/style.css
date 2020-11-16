@@ -1,0 +1,108 @@
+body{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    margin: 0 auto;
+}
+
+.page-header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: 1px solid #ececec;
+    align-items: center;
+}
+
+.page-header__logo{
+    padding: 20px 0 20px 10px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.main-nav{
+    margin-left: auto;
+}
+
+.main-nav__toogle{
+    width: 20px;
+    height: 14px;
+}
+
+.hidden{
+    display:none;
+}
+
+.page-main{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.choise__header{
+    height: 283px;
+    background-image: url(/sourse/img/bg-choise__header.png);
+    padding: 0 30px;
+}
+
+.choise__title{
+    padding-top: 73px;
+    margin: 0;
+}
+
+.main-title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    text-align: center;
+}
+
+.choise__list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.choise__item{
+    padding: 25px;
+    background-color: #63d1bb;
+    background-image: url(/sourse/img/interior.png);
+    background-repeat: no-repeat;
+    background-position: 244px 22px;
+}
+
+.choise__item--baby{
+    background-color: #56c3b2;
+    background-image: url(/sourse/img/toy-svg.png);
+    background-position: 233px 21px;
+}
+
+.choise__item-link{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 19px;
+    width: 110px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.week-product{
+    margin: 0 30px;
+}
+
+.week-product__title{
+    font-size: 25px;
+    font-weight: 400;
+    margin: 30px 0 0 0;
+}
+
+.week-product__info{
+    text-transform: uppercase;
+    color:#63d1bb;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.week-product__description{
+    margin-top: 30px;
+}
