@@ -1,3 +1,5 @@
+/* Общие и индекс */
+
 body{
     display: flex;
     flex-direction: column;
@@ -27,7 +29,7 @@ body{
 
 .main-nav__toogle{
     width: 20px;
-    height: 14px;
+    height: 20px;
 }
 
 .hidden{
@@ -64,7 +66,7 @@ body{
 }
 
 .choise__item{
-    padding: 25px;
+    padding: 25px 30px;
     background-color: #63d1bb;
     background-image: url(../img/interior.png);
     background-repeat: no-repeat;
@@ -147,10 +149,10 @@ body{
     text-transform: uppercase;
     margin: 0;
     outline: none;
+    width: 100%;
 }
 
 .week-product__button{
-    width: 100%;
     margin-bottom: 35px;
 }
 
@@ -158,16 +160,22 @@ body{
     background-image: url(../img/zigzag-line-desktop.png);
     background-repeat: no-repeat;
     background-position: top;
+    padding: 0 30px;
 }
 
 .about__title{
+    margin: 0;
     margin-top: 36px;
     font-size: 25px;
-    margin: 0;
 }
 
 .about__item-img{
-    height: 86px;
+    margin:20px 0;
+    height: 40px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about__item-text{
@@ -177,3 +185,116 @@ body{
     vertical-align: bottom;
     margin: 0;
 }
+
+.reviews{
+    margin: 0 30px;
+}
+
+.reviews__title{
+    font-size: 25px;
+    margin: 35px 0;
+}
+
+.reviews__item{
+    margin: 0;
+}
+
+.reviews__text{
+    line-height: 33px;
+    margin-bottom: 40px;
+    color: #444444;
+    font-size: 15px;
+}
+
+.reviews__author{
+   font-weight: 700;
+   font-size: 18px;
+   font-style: normal;
+}
+
+.reviews__author-link{
+    margin: 15px 0 35px 0;
+    display: block;
+    text-decoration: none;
+    color: #444444;
+}
+
+.reviews__buttons-arrow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 38px;
+}
+
+.reviews__arrow-button {
+    width: 130px;
+    margin: 0;
+    height: 50px;
+    border: 1px solid #ececec;
+    background-color: #fff;
+    padding: 0;
+    outline: none;
+}
+
+.reviews__button{
+    margin-bottom: 40px;
+}
+
+.contacts{
+
+    background-image: url(../img/zigzag-line-desktop.png);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.contacts__title{
+    font-size: 18px;
+    margin: 45px 30px;
+}
+
+.contacts__table{
+    margin: 0 30px 20px 30px;
+    font-size: 15px;
+}
+
+.contacts__field{
+    width: 75px;
+    line-height: 35px;
+    padding: 10px 0;
+    vertical-align: top;
+}
+
+.contacts__field-info{
+    line-height: 35px;
+    padding: 10px 0;
+    vertical-align: top;
+}
+
+.contacts_email-link{
+
+}
+
+.contacts__button{
+    margin: 40px 0;
+}
+
+.page-footer{
+    background-color: #f1f1f1;
+}
+
+.page-footer__social{
+    margin: 25px 70px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social__link{
+    text-decoration: none;
+}
+
+
+/* Каталог */
+
+
