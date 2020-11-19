@@ -26,24 +26,27 @@
         </nav>
     </header>
     <main class="page-main">
+        <header class="catalog__header">
+            <h2 class="catalog__title main-title">Каталог товаров</h2>
+            </header>
         <section class="catalog">
-        <h2 class="catalog__title main-title">Каталог товаров</h2>
         <div class="catalog__wrapper">
             <div class="catalog__item product">
-                <img src="https://place-hold.it/260x195" alt="" class="product__img">
+                <img src="./img/photo-1-mobile.png" alt="#" class="product__img">
                 <div class="product__info">
                     <a href="#" class="product__link">
                       Зайчик-попрыгайчик</a>
                         <span class="product_description">
                             Рост 30 см, вес 200 г
                         </span>
-
+                        <div class="product__bottom-block">
                     <span class="product__price">1200 p</span>
-                    <button class="product__button-buy">Корзинка</button>
+                    <button class="product__button-buy"></button>
+                </div>
                 </div>
             </div>
             <div class="catalog__item product">
-                <img src="https://place-hold.it/260x195" alt="" class="product__img">
+                <img src="./img/photo-2-mobile.png" alt="#" class="product__img">
                 <div class="product__info">
                     <a href="#" class="product__link">
                         Корзина для белья
@@ -51,13 +54,14 @@
                         <span class="product_description">
                             Диаметр 15 см, высота 10 см
                         </span>
-
+                        <div class="product__bottom-block">
                     <span class="product__price">690 p</span>
-                    <button class="product__button-buy">Корзинка</button>
+                    <button class="product__button-buy"></button>
+                </div>
                 </div>
             </div>
             <div class="catalog__item product">
-                <img src="https://place-hold.it/260x195" alt="" class="product__img">
+                <img src="./img/photo-3-mobile.png" alt="#" class="product__img">
                 <div class="product__info">
                     <a href="#" class="product__link">
                         Большая корзинка для игрушек 
@@ -65,21 +69,23 @@
                     <span class="product_description">
                         Диаметр 30 см, высота 30 см
                     </span>
-
+                    <div class="product__bottom-block">
                     <span class="product__price">1500 p</span>
-                    <button class="product__button-buy">Корзинка</button>
+                    <button class="product__button-buy"></button>
+                </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="process">
-        <a href="#" class="product__link video-link">
-           Процесс производства
-        </a>
-        <video width="260" height="150" controls="controls">
+        <header class="process__header">
+             <img class="process__img" src="./img/video.png" alt="#" width="32" height="22">
+            <h3 class="process__title">Процесс производства</h3>
+            </header>
+        <video  class="process__video" width="258" height="150" controls="controls" poster="./img/video-mobile.png">
             <source src="./video/clouds.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
         </video>
-        <p class="process_info">
+        <p class="process__info">
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
         </p>
         <button class="process__button button">Сделать заказ</button>
