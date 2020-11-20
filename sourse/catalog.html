@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
+    <div class="container">
     <header class="page-header">
         <a href="#" class="page-header__logo">
             <img src="./img/logo.png" alt="Мишка" class="page-header__logo-img">
@@ -19,8 +19,12 @@
             </button>
             <div class="main-nav__wrapper hidden">
                 <ul class="main-nav__list site-list">
-                    <li class="site-list__item">Каталог товаров</li>
-                    <li class="site-list__item">Вязание на заказ</li>
+                    <li class="site-list__item"> <a href=""> Каталог товаров</a></li>
+                    <li class="site-list__item"> <a href=""> Вязание на заказ</a></li>
+                </ul>
+                <ul class="main-nav__list user-list">
+                    <li class="user-list__item"> <a href="">Поиск</a></li>
+                    <li class="user-list__item"> <a href="">Корзина</a></li>
                 </ul>
             </div>
         </nav>
@@ -81,7 +85,7 @@
              <img class="process__img" src="./img/video.png" alt="#" width="32" height="22">
             <h3 class="process__title">Процесс производства</h3>
             </header>
-        <video  class="process__video" width="258" height="150" controls="controls" poster="./img/video-mobile.png">
+        <video  class="process__video" controls="controls" poster="./img/video-mobile.png">
             <source src="./video/clouds.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
         </video>
         <p class="process__info">
@@ -103,6 +107,7 @@
             </a>
         </div>
     </footer>
+    </div>
 </body>
 
 </html>

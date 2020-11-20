@@ -9,6 +9,7 @@
      <link rel="stylesheet" href="./css/style.css">
  </head>
  <body>
+     <div class="container">
      <header class="page-header">
          <a href="#" class="page-header__logo">
              <img src="./img/logo.png" alt="Мишка" class="page-header__logo-img">
@@ -17,11 +18,15 @@
              <button class="main-nav__toogle">
              </button>
              <div class="main-nav__wrapper hidden">
-                 <ul class="main-nav__list site-list">
-                     <li class="site-list__item">Каталог товаров</li>
-                     <li class="site-list__item">Вязание на заказ</li>
-                 </ul>
-             </div>
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item"> <a href=""> Каталог товаров</a></li>
+                    <li class="site-list__item"> <a href=""> Вязание на заказ</a></li>
+                </ul>
+                <ul class="main-nav__list user-list">
+                    <li class="user-list__item"> <a href="">Поиск</a></li>
+                    <li class="user-list__item"> <a href="">Корзина</a></li>
+                </ul>
+            </div>
          </nav>
      </header>
      <main class="page-main">
@@ -122,7 +127,7 @@
                 </tr>
              </table>
              
-             <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/10393/london/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Лондон</a><a href="https://yandex.ru/maps/10393/london/?ll=-0.111191%2C51.503929&source=wizgeo&utm_medium=mapframe&utm_source=maps&z=13.32" style="color:#eee;font-size:12px;position:absolute;top:14px;">Карта Лондона с улицами и номерами домов онлайн — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUAZXWo-D" width="320" height="457" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+             <div class="contacts__map" style="position:relative;overflow:hidden;"><iframe class="contacts__map-iframe" src="https://yandex.ru/map-widget/v1/-/CCUAZXWo-D" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
 
              <button class="contacts__button button">Напишите нам</button>
          </section>
@@ -140,5 +145,6 @@
              </a>
          </div>
      </footer>
+    </div>
  </body>
  </html>
