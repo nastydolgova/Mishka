@@ -19,12 +19,12 @@
              </button>
              <div class="main-nav__wrapper hidden">
                 <ul class="main-nav__list site-list">
-                    <li class="site-list__item"> <a href=""> Каталог товаров</a></li>
-                    <li class="site-list__item"> <a href=""> Вязание на заказ</a></li>
+                    <li class="site-list__item"> <a class="main-nav__link" href=""> Каталог товаров</a></li>
+                    <li class="site-list__item"> <a class="main-nav__link" href=""> Вязание на заказ</a></li>
                 </ul>
                 <ul class="main-nav__list user-list">
-                    <li class="user-list__item"> <a href="">Поиск</a></li>
-                    <li class="user-list__item"> <a href="">Корзина</a></li>
+                    <li class="site-list__item user-list__item"> <a class="main-nav__link" href="">Поиск по сайту</a></li>
+                    <li class="site-list__item user-list__item--cart"> <a class="main-nav__link" href="">Корзина: пока пуста</a></li>
                 </ul>
             </div>
          </nav>
@@ -97,7 +97,7 @@
              <div class="reviews__list slider__list">
                  <div class="reviews__item slider__item">
                      <p class="reviews__text">
-                        Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии,&nbspя накупила аксессуаров и&nbspигрушек в Мишке, и мои фотографии&nbspсразу стали более стильными, а также набирают больше&nbspлайков!
+                        Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
                      </p>
                      <p  class="reviews__author">
                         Анастасия Красильникова
@@ -146,5 +146,22 @@
          </div>
      </footer>
     </div>
+    <div class="modal hidden">
+        <h3 class="modal__title">Добавить в корзину</h3>
+        <form action="" class="modal__form">
+            <fieldset class="modal__fieldset">
+             <legend class="modal__legend">
+                Выберите размер:
+             </legend>
+             <div class="modal__radio-buttons">
+             <label for="" class="modal__label"><input type="radio" name="" id="" class="modal__radio" checked>S</label>
+             <label for="" class="modal__label"><input type="radio" name="" id="" class="modal__radio">M</label>
+             <label for="" class="modal__label"><input type="radio" name="" id="" class="modal__radio">L</label>
+            </div>
+            <button class="modal__button">Добавить</button>
+          </fieldset> 
+        </form>
+    </div>
+    <div class="body__background hidden"></div>
  </body>
  </html>

@@ -19,15 +19,15 @@
             <button class="main-nav__toogle">
             </button>
             <div class="main-nav__wrapper hidden">
-                <ul class="main-nav__list site-list">
-                    <li class="site-list__item"> <a href=""> Каталог товаров</a></li>
-                    <li class="site-list__item"> <a href=""> Вязание на заказ</a></li>
-                </ul>
-                <ul class="main-nav__list user-list">
-                    <li class="user-list__item"> <a href="">Поиск</a></li>
-                    <li class="user-list__item"> <a href="">Корзина</a></li>
-                </ul>
-            </div>
+               <ul class="main-nav__list site-list">
+                   <li class="site-list__item"> <a class="main-nav__link" href=""> Каталог товаров</a></li>
+                   <li class="site-list__item"> <a class="main-nav__link" href=""> Вязание на заказ</a></li>
+               </ul>
+               <ul class="main-nav__list user-list">
+                   <li class="site-list__item user-list__item"> <a class="main-nav__link" href="">Поиск по сайту</a></li>
+                   <li class="site-list__item user-list__item--cart"> <a class="main-nav__link" href="">Корзина: пока пуста</a></li>
+               </ul>
+           </div>
         </nav>
     </header>
     <main class="page-main">
@@ -39,12 +39,12 @@
                 Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами,
                 чтобы уточнить детали.
             </p>
-            <fieidset class="form__item">
+            <fieldset class="form__item">
                 <legend class="form__item-legend">Тип</legend>
                 <label for="order-type" class="form__radio-label">  <input type="radio" name="order-type" id="" class="form__radio" checked> <p  class="form__item-p">  Аксессуар для интерьера </p></label>
                <label for="order-type" class="form__radio-label"> <input type="radio" name="order-type" id="" class="form__radio"> <p class="form__item-p"> Детская игрушка</p></label>
-            </fieidset>
-            <fieidset class="form__item">
+            </fieldset>
+            <fieldset class="form__item">
                 <legend class="form__item-legend">Цвет</legend>
                 <label class="form__checkbox-label"><input type="checkbox" name="color" id="" class="form__checkbox"><p class="form__item-p">Белый</p></label>
                 <label class="form__checkbox-label"><input type="checkbox" name="color" id="" class="form__checkbox"><p class="form__item-p">Серый</p></label>
@@ -52,28 +52,28 @@
                 <label class="form__checkbox-label"><input type="checkbox" name="color" id="" class="form__checkbox"><p class="form__item-p">Черный</p></label>
                 <label class="form__checkbox-label"><input type="checkbox" name="color" id="" class="form__checkbox"><p class="form__item-p">Розовый</p></label>
                 <label class="form__checkbox-label"><input type="checkbox" name="color" id="" class="form__checkbox"><p class="form__item-p">Оранжевый</p></label>
-            </fieidset>
-            <fieidset class="form__item">
+            </fieldset>
+            <fieldset class="form__item">
                 <legend class="form__item-legend">ФИО</legend>
-                <label>Имя:</label>
+                <label class="form__input-label">Имя:</label>
                 <input type="text" class="form__input-text" placeholder="Введите ваше имя*" required>
-                <label>Фамилия:</label>
+                <label class="form__input-label">Фамилия:</label>
                 <input type="text" class="form__input-text" placeholder="Укажите фамилию*" required>
-                <label>Отчество:</label>
+                <label class="form__input-label">Отчество:</label>
                 <input type="text" class="form__input-text" placeholder="Отчество, если желаете">
-            </fieidset> 
-            <fieidset class="form__item">
-                <legend class="form__item-legend">Тел</legend>
+            </fieldset> 
+            <fieldset class="form__item">
+                <legend class="form__item-legend  form__item-legend-single">Тел</legend>
                 <input type="tel" class="form__input-tel" placeholder="+7 XXX XX XX*" required>
-            </fieidset>
-            <fieidset class="form__item">
-                <legend class="form__item-legend">e-mail</legend>
+            </fieldset>
+            <fieldset class="form__item">
+                <legend class="form__item-legend  form__item-legend-single">e-mail</legend>
                 <input type="mail" class="form__input-mail" placeholder="Ваш Email*" required>
-            </fieidset>
-            <fieidset class="form__item">
-                <legend class="form__item-legend">Доп</legend>
-                <textarea name="" id="" cols="30" rows="10" class="form__textarea"></textarea>
-            </fieidset>
+            </fieldset>
+            <fieldset class="form__item">
+                <legend class="form__item-legend form__item-legend-single">Доп</legend>
+                <textarea name="" id="" class="form__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </fieldset>
             <p class="form__legend form__legend-bottom">
                 * Поля обязательные для заполнения
             </p>
@@ -94,6 +94,7 @@
         </div>
     </footer>
     </div>
+    <div class="body__background hidden"></div>
 </body>
 
 </html> 
