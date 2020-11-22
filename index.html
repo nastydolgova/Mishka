@@ -9,6 +9,7 @@
      <link rel="stylesheet" href="./css/style.css">
  </head>
  <body>
+     <div class="container">
      <header class="page-header">
          <a href="#" class="page-header__logo">
              <img src="./img/logo.png" alt="Мишка" class="page-header__logo-img">
@@ -17,11 +18,15 @@
              <button class="main-nav__toogle">
              </button>
              <div class="main-nav__wrapper hidden">
-                 <ul class="main-nav__list site-list">
-                     <li class="site-list__item">Каталог товаров</li>
-                     <li class="site-list__item">Вязание на заказ</li>
-                 </ul>
-             </div>
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item"> <a class="main-nav__link" href="./catalog.html"> Каталог товаров</a></li>
+                    <li class="site-list__item"> <a class="main-nav__link" href="./form.html"> Вязание на заказ</a></li>
+                </ul>
+                <ul class="main-nav__list user-list">
+                    <li class="site-list__item user-list__item"> <a class="main-nav__link" href="">Поиск по сайту</a></li>
+                    <li class="site-list__item user-list__item--cart"> <a class="main-nav__link" href="">Корзина: пока пуста</a></li>
+                </ul>
+            </div>
          </nav>
      </header>
      <main class="page-main">
@@ -92,7 +97,7 @@
              <div class="reviews__list slider__list">
                  <div class="reviews__item slider__item">
                      <p class="reviews__text">
-                        Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии,&nbspя накупила аксессуаров и&nbspигрушек в Мишке, и мои фотографии&nbspсразу стали более стильными, а также набирают больше&nbspлайков!
+                        Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
                      </p>
                      <p  class="reviews__author">
                         Анастасия Красильникова
@@ -101,8 +106,8 @@
                      </span>
                  </div>
                  <div class="reviews__buttons-arrow">
-                 <button class="reviews__arrow-button button-prev">Стрелка</button>
-                 <button class="reviews__arrow-button button-next">Стрелка</button>
+                 <button class="reviews__arrow-button button-prev"></button>
+                 <button class="reviews__arrow-button button-next"></button>
                 </div>   
                  <button class="reviews__button button">Написать</button>
              </div>
@@ -122,7 +127,7 @@
                 </tr>
              </table>
              
-             <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/10393/london/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Лондон</a><a href="https://yandex.ru/maps/10393/london/?ll=-0.111191%2C51.503929&source=wizgeo&utm_medium=mapframe&utm_source=maps&z=13.32" style="color:#eee;font-size:12px;position:absolute;top:14px;">Карта Лондона с улицами и номерами домов онлайн — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUAZXWo-D" width="320" height="457" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+             <div class="contacts__map" style="position:relative;overflow:hidden;"><iframe class="contacts__map-iframe" src="https://yandex.ru/map-widget/v1/-/CCUAZXWo-D" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
 
              <button class="contacts__button button">Напишите нам</button>
          </section>
@@ -140,5 +145,23 @@
              </a>
          </div>
      </footer>
+    </div>
+    <div class="modal hidden">
+        <h3 class="modal__title">Добавить в корзину</h3>
+        <form action="" class="modal__form">
+            <fieldset class="modal__fieldset">
+             <legend class="modal__legend">
+                Выберите размер:
+             </legend>
+             <div class="modal__radio-buttons">
+             <label for="" class="modal__label"><input type="radio" name="" id="" class="modal__radio" checked>S</label>
+             <label for="" class="modal__label"><input type="radio" name="" id="" class="modal__radio">M</label>
+             <label for="" class="modal__label"><input type="radio" name="" id="" class="modal__radio">L</label>
+            </div>
+            <button class="modal__button">Добавить</button>
+          </fieldset> 
+        </form>
+    </div>
+    <div class="body__background hidden"></div>
  </body>
  </html>
