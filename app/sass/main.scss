@@ -176,7 +176,7 @@ body{
 
 
 .choise__item:hover{
-    transform: scale(1.05);
+    transform: scale(1, 1.03);
 }
 
 .choise__item:active{
@@ -590,11 +590,11 @@ body{
 }
 
 .product__button-buy:hover{
-    background-image: url(../img/cart.svg\ copy\ 6.png);
+    background-image: url(../img/cart_blue.png);
 }
 
 .product__button-buy:active{
-    background-image: url(../img/cart.svg\ copy\ 6.png);
+    background-image: url(../img/cart_blue.png);
     opacity:0.5
 }
 
@@ -707,7 +707,7 @@ body{
     position: absolute;
     width: 40px;
     height: 40px;
-    background-image: url(../img/Shape\ 1\ copy.png);
+    background-image: url(../img/Shape_empty.png);
     background-repeat: no-repeat;
 }
 
@@ -717,7 +717,7 @@ body{
     position: absolute;
     width: 40px;
     height: 40px;
-    background-image: url(../img/Layer\ 4\ copy\ 19.png);
+    background-image: url(../img/square.png);
     background-repeat: no-repeat;
     top: -7px;
 }
