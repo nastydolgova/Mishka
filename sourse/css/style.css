@@ -191,6 +191,7 @@ body{
     flex-direction: column;
     justify-content: center;
     display: flex;
+    padding-bottom: 35px;
 }
 
 .week-product__title{
@@ -226,6 +227,10 @@ body{
 .week-product__field-info{
     border-bottom: 1px solid #ececec;
     height: 40px;
+}
+
+.week-product__img{
+    align-self: center;
 }
 
 .week-product__price{
