@@ -1,13 +1,13 @@
-function a(x){
-    let b = x;
-    let sum = 0;
-    for (let i = 0; i<b; i++){
-        sum = sum + i
-    }
-    console.log(sum)
-    return sum
-}
+'use strict';
 
-a(10)
-a(20)
-a(30)
+let menuBtn = document.querySelector('.main-nav__toogle');
+let mainNav = document.querySelector('.main-nav__wrapper');
+let bgDiv = document.querySelector('.body__background');
+
+menuBtn.addEventListener('click', openMenu );
+
+function openMenu(){
+    mainNav.classList.toggle('hidden');
+    bgDiv.classList.toggle('hidden');
+    menuBtn.classList.toggle('main-nav__toogle--close');
+}
