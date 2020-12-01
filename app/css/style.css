@@ -250,7 +250,8 @@ body {
     visibility: hidden
   }
   .page-main {
-    margin-top: -42px
+    margin-top: -42px;
+    padding-bottom: 30px
   }
 }
 .page-main {
@@ -952,8 +953,7 @@ body {
 .product_description {
   display: block;
   font-size: 13px;
-  padding: 15px 0 25px 0;
-  border-bottom: 1px solid #ededed
+  padding: 15px 0 25px 0
 }
 .product__bottom-block {
   display: -webkit-box;
@@ -969,7 +969,8 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 70px
+  height: 70px;
+  border-top: 1px solid #ededed
 }
 .product__price {
   font-size: 15px;
@@ -997,6 +998,58 @@ body {
 .product__button-buy:active {
   background-image: url(../img/cart_blue.png);
   opacity: .5
+}
+@media (min-width:768px) {
+  .catalog {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    background-image: url(../img/zigzag-fill-desktop.png);
+    background-position: top;
+    background-repeat: repeat-x;
+    margin: 0;
+    margin-top: -15px;
+    padding: 80px 50px 0 50px
+  }
+  .catalog__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: auto;
+    margin-bottom: 60px
+  }
+  .product__info {
+    width: 334px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    border: 1px solid #ededed
+  }
+  .product__link {
+    font-size: 20px
+  }
+  .product_description {
+    font-size: 15px
+  }
+  .product__bottom-block {
+    -ms-flex-line-pack: end;
+    align-content: flex-end;
+    margin-top: auto
+  }
+  .product__price {
+    font-size: 17px
+  }
 }
 .process {
   margin: 0 30px;
@@ -1042,6 +1095,38 @@ body {
 }
 .process__button {
   margin: 0 35px 30px 35px
+}
+@media (min-width:768px) {
+  .process__header {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    -ms-flex-item-align: start;
+    -ms-grid-row-align: start;
+    align-self: start;
+    padding: 40px 0 50px 40px;
+    font-size: 20px
+  }
+  .process__title {
+    margin: 0
+  }
+  .process__video {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    margin: 0
+  }
+  .process__info {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    font-size: 15px
+  }
+  .process__button {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4
+  }
 }
 .form {
   padding: 0 30px;

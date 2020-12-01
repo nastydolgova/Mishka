@@ -5,7 +5,7 @@ let mainNavWr = document.querySelector('.main-nav__wrapper');
 let bgDiv = document.querySelector('.body__background');
 let mainNav = document.querySelector('.main-nav');
 let orderBtn = document.querySelector('.week-product__button');
-let orderModal = document.querySelector('.modal');
+let popUp = document.querySelector('.modal');
 
 menuBtn.addEventListener('click', openMenu );
 mainNav.classList.remove('main-nav--no-js');
@@ -19,6 +19,6 @@ function openMenu(){
 orderBtn.addEventListener('click', openModal );
 
 function openModal(){
-    orderModal.classList.toggle('hidden');
+    popUp.classList.toggle('hidden');
     bgDiv.classList.toggle('hidden');
 }

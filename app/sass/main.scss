@@ -241,7 +241,8 @@ body {
   }
 
   .page-main{
-      margin-top: -42px
+      margin-top: -42px;
+      padding-bottom: 30px;
   }
 
 }
@@ -919,7 +920,7 @@ body {
   display: block;
   font-size: 13px;
   padding: 15px 0 25px 0;
-  border-bottom: 1px solid #ededed;
+
 }
 
 .product__bottom-block {
@@ -928,6 +929,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 70px;
+  border-top: 1px solid #ededed;
 }
 
 .product__price {
@@ -961,6 +963,50 @@ body {
 .product__button-buy:active {
   background-image: url(../img/cart_blue.png);
   opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+  .catalog{
+    justify-content: flex-start;
+    background-image: url(../img/zigzag-fill-desktop.png);
+    background-position: top;
+    background-repeat: repeat-x;
+    margin: 0;
+    margin-top:-15px;
+    padding: 80px 50px 0 50px;
+  }
+
+  .catalog__item{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-bottom: 60px;
+  }
+
+  .product__info{
+    width: 334px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border: 1px solid #ededed;
+  }
+
+  .product__link{
+    font-size: 20px;
+  }
+
+  .product_description{
+    font-size: 15px;
+  }
+  
+  .product__bottom-block{
+    align-content: flex-end;
+    margin-top: auto;
+  }
+
+  .product__price{
+    font-size: 17px;
+  }
 }
 
 /* process */
@@ -1000,6 +1046,32 @@ body {
 
 .process__button {
   margin: 0 35px 30px 35px;
+}
+
+@media (min-width: 768px) {
+  .process__header{
+    order: 2;
+    align-self: start;
+    padding: 40px 0 50px 40px;
+    font-size: 20px;
+  }
+  .process__title{
+      margin: 0;
+  }
+
+  .process__video{
+    order:1;
+    margin: 0;
+  }
+
+  .process__info{
+    order: 3;
+    font-size: 15px;
+  }
+
+  .process__button{
+    order: 4;
+  }
 }
 
 /* Форма */
