@@ -1,0 +1,62 @@
+.about {
+    background-image: url(../img/zigzag-fill-desktop.png);
+    background-position: top;
+    background-repeat: repeat-x;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  
+  .about__title {
+    margin: 0;
+    padding-top: 36px;
+    font-size: 25px;
+  }
+  
+  .about__item{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .about__item-img {
+    padding: 20px 0;
+    height: 40px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about__item-text {
+    font-size: 17px;
+    font-weight: 700;
+    padding-right: 50px;
+    vertical-align: bottom;
+    margin: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .about{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 50px;
+    }
+  
+    .about__title{
+      margin: 0;
+      font-size: 43px;
+      font-weight: 700;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      padding: 0;
+    }
+  
+    .about__item{
+      padding-top: 30px;
+    }
+  
+  }
+  

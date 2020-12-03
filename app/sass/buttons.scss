@@ -1,0 +1,49 @@
+.button {
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #fff;
+    border: 2px solid #444444;
+    color: #444444;
+    text-transform: uppercase;
+    margin: 0;
+    outline: none;
+    padding: 15px;
+  }
+  
+  .button:hover {
+    color: white;
+    background-color: #444444;
+  }
+  
+  .button:active {
+    color: #8d8d8d;
+    background-color: #444444;
+  }
+  
+  .button-prev {
+    background-image: url(../img/huge-arrow-left.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .button-prev:hover {
+    opacity: 0.6;
+  }
+  
+  .button-prev:active {
+    opacity: 0.4;
+  }
+  
+  .button-next {
+    background-image: url(../img/huge-arrow-right.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .button-next:hover {
+    opacity: 0.6;
+  }
+  
+  .button-next:active {
+    opacity: 0.4;
+  }

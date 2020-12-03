@@ -1,0 +1,62 @@
+.process {
+    margin: 0 30px;
+    border: 1px solid #ededed;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .process__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 35px 0 35px;
+    justify-content: center;
+  }
+  
+  .process__title {
+    font-size: 17px;
+    display: block;
+    padding-left: 25px;
+  }
+  
+  .process__video {
+    outline: none;
+    margin-bottom: 35px;
+    width: 100%;
+  }
+  
+  .process__info {
+    padding: 0 35px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  
+  .process__button {
+    margin: 0 35px 30px 35px;
+  }
+  
+  @media (min-width: 768px) {
+    .process__header{
+      order: 2;
+      align-self: start;
+      padding: 40px 0 50px 40px;
+      font-size: 20px;
+    }
+    .process__title{
+        margin: 0;
+    }
+  
+    .process__video{
+      order:1;
+      margin: 0;
+    }
+  
+    .process__info{
+      order: 3;
+      font-size: 15px;
+    }
+  
+    .process__button{
+      order: 4;
+    }
+  }

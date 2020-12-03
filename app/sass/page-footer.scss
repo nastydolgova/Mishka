@@ -1,0 +1,23 @@
+.page-footer {
+    background-color: #f1f1f1;
+    width: auto;
+    min-height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+  
+  .page-footer__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .social__link {
+    text-decoration: none;
+  }

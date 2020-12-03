@@ -1,0 +1,122 @@
+.reviews {
+    padding: 0 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .reviews__title {
+    font-size: 25px;
+    padding: 35px 0;
+    margin: 0;
+  }
+  
+  .reviews__item {
+    margin: 0;
+  }
+  
+  .reviews__text {
+    line-height: 33px;
+    color: #444444;
+    font-size: 15px;
+    margin: 0;
+    padding-bottom: 40px;
+  }
+  
+  .reviews__author {
+    font-weight: 700;
+    font-size: 18px;
+    font-style: normal;
+    margin: 0;
+  }
+  
+  .reviews__author-link {
+    display: block;
+    text-decoration: none;
+    color: #444444;
+    padding: 15px 0 35px 0;
+  }
+  
+  .reviews__buttons-arrow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 38px;
+    width: 100%;
+  }
+  
+  .reviews__arrow-button {
+    margin: 0;
+    height: 50px;
+    border: 1px solid #ececec;
+    background-color: #fff;
+    padding: 0;
+    outline: none;
+    width: 50%;
+  }
+  
+  .reviews__button {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .reviews{
+      padding: 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      background-image: url(../img/review.png);
+      background-repeat: no-repeat;
+      background-position: left top;
+    }
+  
+    .reviews__title{
+      margin: 0;
+      font-size: 43px;
+      font-weight: 700;
+    }
+  
+    .reviews__list{
+      display: contents;
+    }
+  
+    .reviews__item{
+      display: contents;
+    }
+  
+    .reviews__text{
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  
+    .reviews__author{
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+  
+    .reviews__author-link{
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+  
+    .reviews__button{
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      width: 160px;
+      align-self: center;
+      justify-self: end;
+    }
+  
+    .reviews__buttons-arrow{
+      width: 160px;
+      align-self: center;
+      justify-self: end;
+    }
+  
+    .reviews__arrow-button{
+      border: none;
+    }
+  }
