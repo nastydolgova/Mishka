@@ -55,34 +55,34 @@
             </p>
             <fieldset class="form__item">
                 <legend class="form__item-legend">Тип</legend>
-                <label for="order-type" class="form__radio-label">  <input type="radio" name="order-type" id="" class="form__radio" checked> <p  class="form__item-p">  Аксессуар для интерьера </p></label>
-               <label for="order-type" class="form__radio-label"> <input type="radio" name="order-type" id="" class="form__radio"> <p class="form__item-p"> Детская игрушка</p></label>
-            </fieldset>
+                 <input type="radio" name ="order-type" id="order-type1" class="form__radio" checked> <label for="order-type1" class="form__radio-label">  Аксессуар для интерьера </label>
+                 <input type="radio"  name ="order-type" id="order-type2" class="form__radio"> <label for="order-type2" class="form__radio-label"> Детская игрушка</label>
+            </fieldset> 
             <fieldset class="form__item">
                 <legend class="form__item-legend">Цвет</legend>
-                <label class="form__checkbox-label"><input type="checkbox" name="color" id="" class="form__checkbox"><p class="form__item-p">Белый</p></label>
-                <label class="form__checkbox-label"><input type="checkbox" name="color" id="" class="form__checkbox"><p class="form__item-p">Серый</p></label>
-                <label class="form__checkbox-label"><input type="checkbox" name="color" id="" class="form__checkbox"><p class="form__item-p">"Тиффани"</p></label>
-                <label class="form__checkbox-label"><input type="checkbox" name="color" id="" class="form__checkbox"><p class="form__item-p">Черный</p></label>
-                <label class="form__checkbox-label"><input type="checkbox" name="color" id="" class="form__checkbox"><p class="form__item-p">Розовый</p></label>
-                <label class="form__checkbox-label"><input type="checkbox" name="color" id="" class="form__checkbox"><p class="form__item-p">Оранжевый</p></label>
+                <input type="checkbox" name="color" id="color1" class="form__checkbox"><label class="form__checkbox-label" for="color1">Белый</label>
+                <input type="checkbox" name="color" id="color2" class="form__checkbox"><label class="form__checkbox-label" for="color2">Серый</label>
+                <input type="checkbox" name="color" id="color3" class="form__checkbox"><label class="form__checkbox-label" for="color3">"Тиффани"</label>
+                <input type="checkbox" name="color" id="color4" class="form__checkbox"><label class="form__checkbox-label" for="color4">Черный</label>
+                <input type="checkbox" name="color" id="color5" class="form__checkbox"><label class="form__checkbox-label" for="color5">Розовый</label>
+                <input type="checkbox" name="color" id="color6" class="form__checkbox"><label class="form__checkbox-label" for="color6">Оранжевый</label>
             </fieldset>
             <fieldset class="form__item">
                 <legend class="form__item-legend">ФИО</legend>
                 <label class="form__input-label">Имя:</label>
-                <input type="text" class="form__input-text" placeholder="Введите ваше имя*" required>
+                <input type="text" class="form__input form__input-text" placeholder="Введите ваше имя*" required>
                 <label class="form__input-label">Фамилия:</label>
-                <input type="text" class="form__input-text" placeholder="Укажите фамилию*" required>
+                <input type="text" class="form__input form__input-text" placeholder="Укажите фамилию*" required>
                 <label class="form__input-label">Отчество:</label>
-                <input type="text" class="form__input-text" placeholder="Отчество, если желаете">
+                <input type="text" class="form__input form__input-text" placeholder="Отчество, если желаете">
             </fieldset> 
             <fieldset class="form__item">
                 <legend class="form__item-legend  form__item-legend-single">Тел</legend>
-                <input type="tel" class="form__input-tel" placeholder="+7 XXX XX XX*" required>
+                <input type="tel" class="form__input form__input-tel" placeholder="+7 XXX XX XX*" required>
             </fieldset>
             <fieldset class="form__item">
                 <legend class="form__item-legend  form__item-legend-single">e-mail</legend>
-                <input type="mail" class="form__input-mail" placeholder="Ваш Email*" required>
+                <input type="mail" class="form__input form__input-mail" placeholder="Ваш Email*" required>
             </fieldset>
             <fieldset class="form__item">
                 <legend class="form__item-legend form__item-legend-single">Доп</legend>
@@ -97,17 +97,23 @@
     <footer class="page-footer">
         <div class="page-footer__social social">
             <a href="#" class="social__link">
-                <img src="./img/insta.png" alt="" class="social_icon" width="22" height="21">
-            </a>
+               <svg class="social_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="21" viewBox="0 0 22 21">
+                   <image id="insta.svg" width="22" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAVCAMAAAB1/u6nAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUAAAAiHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8AAAChcy5EAAAAEHRSTlMAYM+/gHAQn+/fjzBAUCCvibRMeAAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkDAEUBjq3NAzIAAAA4klEQVQY002RiY7EMAhDCZDmTv3/XzsO0+2OFanilcMkkhQhe+WeLwkEKMxLNbV2QBYCpHPc+0h5Fma1IuDvBUz0kfecyaKfwIHNMvgeM+ticWnEWmGVrZrxE+IcQY1QvZh1MoaBVURyzSdTGzOHMFUaiPWO4utqhkIMsYNxyuEiZmgvnscO0JYo/QV2Npu0/YjbMDx4/uJEC/vBG26PZTsTiG/UIQW8J3r2QjvPSOyLNbWUdWvQHVhtrz3CeS2kkgJXHXUl+ZfHSHT11nd9MXeT8X0e3o/+vVo9m/bvO/3K8gfpfxCsNsM8+AAAAABJRU5ErkJggg=="/>
+                 </svg>               
+           </a>
             <a href="#" class="social__link">
-                <img src="./img/fb.png" alt="" class="social_icon" width="15" height="28">
-            </a>
+               <svg class="social_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="29" viewBox="0 0 15 29">
+                   <image id="fb.svg" width="15" height="29" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAdCAMAAABCFsboAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUAAAAiHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8AAAChcy5EAAAAEHRSTlMAIHCAMBCvn8/vj0BQv99ghC/KTQAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkDAEUBjkuPV1yAAAAsElEQVQY01XR2xLDIAgE0FVi1CDJ/v/XFi9tKi/OcUR2FBgVonjFYyqdXJUHC+slqk0quzNLmAenjbcCT2+6p5lSdVV7pk80mmKV8UCk4DWgvH7Ow+XJZwKi5NvP64gTgbFK35fcV99UDeseH3GzmDUPreIxgNaDyJF+6QBhoRpltblZ02h+LWUzH+5Ou0/8Wfuk3RW2+fq33x2wz4/u9nUjrfJ9sPEWRdLXwb9u/Rw+MG0K1lJrqBoAAAAASUVORK5CYII="/>
+                 </svg>
+           </a>
             <a href="#" class="social__link">
-                <img src="./img/twitter.png" alt="" class="social_icon" width="23" height="20">
+               <svg class="social_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="20" viewBox="0 0 24 20">
+                   <image id="twitter.svg" width="24" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAUCAMAAACgaw2xAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUAAAAiHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8iHx8AAAChcy5EAAAAEHRSTlMAQK8QUO/fYL9wnyCAz48wIb7VYQAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkDAEUBjkuPV1yAAAAwUlEQVQY021QW7LFIAjDB0IV2+x/tQdttb0zlx8whEwM0T8VEGaP8QMmoszlHgFZVAXAwM3MUBxzqog5jGU8mj8NSdFd1TikaETjzBsdzheGBhVqzEOCa5oXaJSq0/yqDT/IU1lvc+2ctFFTiEievqstoPD1ZxHXQpbxpYTrCQA9f3BBX5IsX62+g8geAm/coG9wgfua/XdtJSe1bMcXP5F7IF5dXvx8Rw5L8sTGfeNhFj3NLLqHr28KpmUIgi1t8Ad9NQf9ckdSWAAAAABJRU5ErkJggg=="/>
+                 </svg>
             </a>
         </div>
     </footer>
-    </div>
+    </div> 
     <div class="body__background hidden"></div>
     <script src="js/app.min.js"></script>
 </body>
