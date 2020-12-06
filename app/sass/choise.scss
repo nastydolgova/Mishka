@@ -86,3 +86,24 @@
           width: 50%;
       }
   }
+
+  @media (min-width: 1150px) {
+    .choise{
+      width: 100%;
+    }
+
+    .choise__title{
+      font-size: 53px;
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+
+    .choise__list{
+     max-width: 1050px;
+     margin: 0 auto;
+    }   
+
+    .choise__title{
+      padding: 50px 200px;
+    }
+  }

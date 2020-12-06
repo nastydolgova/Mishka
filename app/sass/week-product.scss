@@ -80,7 +80,7 @@
   }
   
   @media (min-width: 768px) {
-      .week-product{
+    .week-product{
           background-image: url(../img/zigzag-fill-desktop.png);
           background-position: top;
           background-repeat: repeat-x;
@@ -141,8 +141,19 @@
         grid-row-end: 5;
         grid-column-start: 2;
         grid-column-end: 3;
-        padding: 45px 0 0 40px;
+        padding-top: 45px;
         display: block;
+        justify-self: center;
       }
+  }
+
+  @media (min-width: 1150px) {
+    .week-product{
+      width: 100%;
+    }
+
+    .week-product__header{
+      max-width: 1050px;
+    }
   }
   

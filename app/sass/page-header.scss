@@ -15,7 +15,8 @@
     text-align: center;
   }
   
-  .page-header__logo-img--tablet {
+  .page-header__logo-img--tablet,
+  .page-header__logo-img--desktop {
     display: none;
   }
   
@@ -26,6 +27,7 @@
   .page-header__logo:active .page-header__logo-img {
     opacity: 0.5;
   }
+
   
   @media (min-width: 768px) {
     body {
@@ -47,3 +49,39 @@
       display: inline;
     }
   }
+
+  @media (min-width: 1150px) {
+
+    .page-header{
+      width: 1050px;
+      padding: 0;
+      margin: 0 auto;
+    }
+
+    .page-header__logo-img--tablet {
+      display: none;
+    }
+
+    .page-header__logo-img--desktop {
+      display: inline;
+    }
+
+
+    .main-nav__list-promo{
+      display: block;
+    }
+
+    .main-nav__div-promo{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .page-header__logo{
+      position: absolute;
+      left: 500px;
+      top: -10px;
+    }
+
+  }   
