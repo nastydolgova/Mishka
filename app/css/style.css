@@ -616,10 +616,34 @@ body {
 }
 @media (min-width:1150px) {
   .week-product {
-    width: 100%
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
   }
   .week-product__header {
-    max-width: 1050px
+    width: 1050px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start
+  }
+  .week-product__wrapper {
+    width: 1050px;
+    padding-left: 170px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+  }
+  .week-product__title {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    padding-left: 45px
+  }
+  .week-product__info {
+    margin: 0;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1
   }
 }
 .about {

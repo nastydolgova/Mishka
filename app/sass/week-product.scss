@@ -132,6 +132,7 @@
       }
   
       .week-product__button{
+
         grid-column-start: 1;
         grid-column-end: 2;
       }
@@ -150,10 +151,27 @@
   @media (min-width: 1150px) {
     .week-product{
       width: 100%;
+      align-items: center;
     }
 
     .week-product__header{
-      max-width: 1050px;
+      width: 1050px;
+      justify-content: start;
+    }
+
+    .week-product__wrapper{
+      width: 1050px;
+      padding-left: 170px;
+      box-sizing: border-box;
+    }
+
+    .week-product__title{
+      order: 2;
+      padding-left: 45px;
+    }
+    .week-product__info{
+      margin: 0;
+      order: 1;
     }
   }
   
