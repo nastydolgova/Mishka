@@ -89,3 +89,59 @@
     }
   }
   
+  @media (min-width: 1050px) {
+   .contacts{
+     width: 1050px;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: min-content min-content min-content;
+     padding: 70px 0;
+     box-sizing: border-box;
+   }
+
+   .contacts__title{
+    font-size: 53px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding-left: 170px;
+    background-position: left top;
+    align-self: end;
+    padding-bottom: 20px;
+   }
+
+   .contacts__table{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding-left: 170px;
+    padding-bottom: 0;
+   }
+
+   .contacts__button {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-left: 170px;
+   }
+
+   .contacts__map{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    padding-bottom: 0;
+   }
+
+   .contacts__table tbody{
+    flex-direction: column;
+  }
+
+  .contacts__tr{
+    width: 100%;
+  }
+
+}

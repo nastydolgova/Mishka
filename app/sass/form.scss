@@ -291,4 +291,43 @@
       align-self: center;
     }
   }
-  
+
+  @media (min-width: 1050px){
+    .form__header{
+      width: 100%;
+    }
+
+    .form__title{
+      font-size: 53px;
+      width: 1150px;
+      margin: 0 auto;
+      padding: 50px 200px;
+      box-sizing: border-box;
+    }
+
+    .form{
+      width: 100%;
+      align-items: center;
+  }
+
+  .form__description{
+    width: 700px;
+    padding: 0;
+  }
+
+  .form__item{
+    width: 1050px;
+    box-sizing: border-box;
+    padding-left: 170px;
+  }
+
+  .form__legend{
+    width: 1050px;
+    align-self: center;
+    text-align: end;
+  }
+
+  .form__item:nth-child(3){
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

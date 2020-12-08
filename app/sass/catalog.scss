@@ -50,3 +50,37 @@
       margin-bottom: 60px;
     }
   }
+
+  @media (min-width: 1050px){
+    .catalog__header{
+      width: 100%;
+    }
+
+    .catalog__title{
+      font-size: 53px;
+      width: 1150px;
+      margin: 0 auto;
+      padding: 50px 200px;
+      box-sizing: border-box;
+    }
+
+    .catalog{
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0;
+      padding-top: 80px;
+    }
+
+    .catalog__header{
+      padding: 0;
+    }
+
+    .catalog__item{
+      flex-direction: column;
+      width: 316px;
+      margin: 0 25px 60px 25px;
+    }
+
+  }

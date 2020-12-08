@@ -60,3 +60,17 @@
   
   }
   
+  @media (min-width: 1150px) {
+    .about{
+      width: 700px;
+      padding-bottom: 90px;
+    }
+
+    .about__title{
+      font-size: 53px;
+    }
+
+    .about__item-text {
+      font-size: 20px;
+    }
+  }

@@ -120,3 +120,15 @@
       border: none;
     }
   }
+
+  @media (min-width: 768px) {
+    .reviews{
+      width: 1050px;
+      padding-left: 170px;
+      padding-bottom: 70px;
+      box-sizing: border-box;
+    }
+    .reviews__text{
+      padding-right: 50px;
+    }
+  }
