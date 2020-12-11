@@ -33,6 +33,10 @@
   
   .process__button {
     margin: 0 35px 30px 35px;
+    box-sizing: border-box;
+    text-align:center;
+    text-decoration: none;
+    
   }
   
   @media (min-width: 768px) {
@@ -68,6 +72,7 @@
       display: grid;
       grid-template-columns: 2fr 1fr;
       grid-template-rows: min-content min-content min-content;
+      margin: 0;
       margin-bottom: 105px;
       column-gap: 70px;
     }

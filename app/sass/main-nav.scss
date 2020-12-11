@@ -46,14 +46,14 @@
   .main-nav__toogle {
     border: none;
     background-color: transparent;
-    background-image: url(../img/menu.png);
+    background-image: url(../img/menu.webp);
     background-repeat: no-repeat;
     background-position: center;
     outline: none;
   }
   
   .main-nav__toogle--close {
-    background-image: url(../img/menu-close.png);
+    background-image: url(../img/menu-close.webp);
   }
   
   .main-nav__link:hover {
@@ -72,13 +72,13 @@
   }
   
   .user-list__item {
-    background-image: url(../img/search.png);
+    background-image: url(../img/search.webp);
     background-repeat: no-repeat;
     background-position: 30px center;
   }
   
   .user-list__item--cart {
-    background-image: url(../img/cart.png);
+    background-image: url(../img/cart.webp);
     background-repeat: no-repeat;
     background-position: 30px center;
   }

@@ -31,8 +31,14 @@
                     <li class="site-list__item"> <a class="main-nav__link" href="./form.html"> Вязание на заказ</a></li>
                 </ul>
                 <ul class="main-nav__list user-list">
-                    <li class="user-list__item user-list__item--search"> <a class="main-nav__link" href=""><span>Поиск по сайту</span></a></li>
-                    <li class="user-list__item user-list__item--cart"> <a class="main-nav__link" href="">Корзина: пока пуста</a></li>
+                    <li class="user-list__item user-list__item--search"> <a class="main-nav__link" href="">
+                        <span>Поиск по сайту</span></a>
+                    </li>
+                    <li class="user-list__item user-list__item--cart"> 
+                        <a class="main-nav__link" href="">
+                            Корзина: пока пуста
+                            </a>
+                    </li>
                 </ul>
                 <div class="main-nav__div-promo">
                 <ul class="main-nav__list promo-list">
@@ -80,9 +86,9 @@
                 </tr>
              </table>
              <picture class="week-product__picture">
-                <source media="(min-width:1050px)" srcset="./img/triple-set-desktop.png">
-                <source media="(min-width:768px)" srcset="./img/triple-set-tablet.png">
-                <img src="./img/triple-set-mobile.png" alt="" class="week-product__img">
+                <source media="(min-width:1050px)" srcset="./img/triple-set-desktop.webp">
+                <source media="(min-width:768px)" srcset="./img/triple-set-tablet.webp">
+                <img src="./img/triple-set-mobile.webp" alt="" class="week-product__img">
              </picture>
              <span class="week-product__price">Цена: 990 руб.</span>
              <button class="week-product__button button">Заказать</button>
@@ -144,15 +150,35 @@
          <section class="reviews">
              <h2 class="reviews__title">Отзывы</h2>
              <div class="reviews__list slider__list">
-                 <div class="reviews__item slider__item">
-                     <p class="reviews__text">
+                <div class="reviews__item slider__item slider1">
+                    <p class="reviews__text">
                         Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-                     </p>
-                     <p  class="reviews__author">
+                       </p>
+                       <p  class="reviews__author">
                         Анастасия Красильникова
-                     </p>
-                     <a href="#" class="reviews__author-link"> @misssssiskras </a>
-                     </span>
+                      </p>
+                      <a href="#" class="reviews__author-link"> @misssssiskras </a>
+                      </span>
+                 </div>
+                 <div class="reviews__item slider__item slider2 hidden">
+                    <p class="reviews__text">
+                        Мне все понравилось 
+                    </p>
+                       <p  class="reviews__author">
+                        Анна Блинная
+                      </p>
+                      <a href="#" class="reviews__author-link"> @blin </a>
+                      </span>
+                 </div>
+                 <div class="reviews__item slider__item slider3 hidden">
+                    <p class="reviews__text">
+                        Самые худшие корзины                       
+                    </p>
+                       <p  class="reviews__author">
+                        Владислав Мирный
+                      </p>
+                      <a href="#" class="reviews__author-link"> @vladmir </a>
+                      </span>
                  </div>
                  <div class="reviews__buttons-arrow">
                  <button class="reviews__arrow-button button-prev"></button>
@@ -218,6 +244,8 @@
         </form>
     </div>
     <div class="body__background hidden"></div>
-    <script src="js/app.min.js"></script>
+    <script src="js/openMenu.js"></script>
+    <script src="js/openModal.js"></script>
+    <script src="js/slider.js"></script>
  </body>
  </html>

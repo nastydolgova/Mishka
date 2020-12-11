@@ -45,7 +45,7 @@
   .product__button-buy {
     width: 20px;
     height: 20px;
-    background-image: url(../img/cart.png);
+    background-image: url(../img/cart.webp);
     background-repeat: no-repeat;
     border: none;
     background-color: transparent;
@@ -61,11 +61,11 @@
   }
   
   .product__button-buy:hover {
-    background-image: url(../img/cart_blue.png);
+    background-image: url(../img/cart_blue.webp);
   }
   
   .product__button-buy:active {
-    background-image: url(../img/cart_blue.png);
+    background-image: url(../img/cart_blue.webp);
     opacity: 0.5;
   }
   
