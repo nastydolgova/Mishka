@@ -1,24 +1,11 @@
 'use strict';
-(function(){
-    // let form = document.querySelector('.form');
+
     let formBtn = document.querySelector('.form__button');
     let inputs = document.querySelectorAll('.form__input');
 
     let orders = [];
     
     formBtn.addEventListener('click', addOrder);
-
-
-    // for (let i = 0; i < inputs.length; i++) {
-    //   inputs[i].addEventListener("invalid", function (evt) {
-    //     if (!inputs[i].valid) {
-    //       inputs[i].setCustomValidity("Заполните поле верно");
-    //       smbtBtn.addEventListener("click", function () {
-    //         inputs[i].classList.add("invalid-info");
-    //       });
-    //     }
-    //   });
-    // }
     
     function addOrder(e){
         e.preventDefault();
@@ -67,6 +54,6 @@
           }
     }
 
-})();
+
 
 

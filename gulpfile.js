@@ -19,7 +19,7 @@ function browsersync(){
 
 function scripts(){
     return src(
-        'app/js/app.js'  
+        ['app/**/*.js']
         // какой файл
     )
     .pipe(concat('app.min.js')) 
@@ -49,7 +49,7 @@ function images(){
 function buildcopy(){
     return src([
         'app/css/**/*',
-        'app/js/**/*.min.js',
+        'app/js/**/*.js',
         'app/**/*.html',
     ], { base: 'app/'})
     .pipe(dest('dist'))

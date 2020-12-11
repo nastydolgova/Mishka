@@ -1,8 +1,7 @@
 'use strict';
-(function(){
+
 let mainNav = document.querySelector('.main-nav');
 let menuBtn = document.querySelector('.main-nav__toogle');
-let bgDiv = document.querySelector('.body__background');
 
 mainNav.classList.remove('main-nav--no-js');
 
@@ -15,4 +14,3 @@ function openMenu(){
     bgDiv.classList.toggle('hidden');
     menuBtn.classList.toggle('main-nav__toogle--close');
 }
-})();

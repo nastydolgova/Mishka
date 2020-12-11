@@ -1,5 +1,5 @@
 'use strict';
-(function(){
+
 let bgDiv = document.querySelector('.body__background');
 let orderBtnIndex = document.querySelector('.week-product__button');
 let popUp = document.querySelector('.modal');
@@ -20,5 +20,3 @@ function openModal(){
     popUp.classList.toggle('hidden');
     bgDiv.classList.toggle('hidden');
 }
-
-})();
