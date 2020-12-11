@@ -1,17 +1,20 @@
 @font-face {
   font-family: 'Open Sans';
   font-weight: 400;
-  src: local("Open Sans"),url(../font/OpenSans-Regular.woff) format("woff")
+  src: local("Open Sans"),url(../font/OpenSans-Regular.woff) format("woff");
+  font-display: swap
 }
 @font-face {
   font-family: 'Open Sans';
   font-weight: 700;
-  src: local("Open Sans"),url(../font/OpenSans-Bold.woff) format("woff")
+  src: local("Open Sans"),url(../font/OpenSans-Bold.woff) format("woff");
+  font-display: swap
 }
 @font-face {
   font-family: 'Open Sans';
   font-weight: 300;
-  src: local("Open Sans"),url(../font/OpenSans-Light.woff) format("woff")
+  src: local("Open Sans"),url(../font/OpenSans-Light.woff) format("woff");
+  font-display: swap
 }
 .button {
   font-weight: 700;
@@ -494,7 +497,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 35px
+  padding-bottom: 35px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
 }
 .week-product__wrapper {
   -webkit-box-orient: vertical;
@@ -950,8 +955,11 @@
   vertical-align: top
 }
 .contacts__map {
-  width: 100%;
-  padding-bottom: 40px
+  padding-bottom: 40px;
+  width: 100%
+}
+.contacts__img {
+  width: 100%
 }
 .contacts__map-iframe {
   width: 100%;
@@ -1005,6 +1013,18 @@
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center
+  }
+  .contacts__map {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
   }
 }
 @media (min-width:1050px) {
