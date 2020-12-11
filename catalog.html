@@ -11,41 +11,81 @@
 <body>
     <div class="container">
         <header class="page-header">
-            <a href="./index.html" class="page-header__logo"> 
-                <svg class="page-header__logo-img page-header__logo-img--mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="86" height="35" viewBox="0 0 86 35">
-                   <image id="mishka-logo-mobile.svg" width="86" height="35" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAjCAQAAACksDUOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCxgROgJ1P8tHAAAEBklEQVRYw+2Y0XHbOBCGP2nyHnRwvAqMDkxVEHdgpYIoFZiuwHIFSiqQUoHoCkRXYKYC8SrAPXABLEFQ4l3Oc3Mzt3wguMDu/vsT2iUEc6TghMNRzFr9brKcCdbK/T8A9r2loJxDxF8D+ykbpsTMsl5zxrFPtIY9bxwpfy1fSymvv8ThcDypuR1vonU4zlQCfo/DZUP364+J9ojDiXVKw4aKiiqybtln8kWCHkP2R+VwJ3MVlQRzODbAWsYerGGH440iwBqCrXA4TglJTwMilL+TPBYJWJdx08tTMuN5r0LwCLZUz2OwhjMOx1ppduKr38U++b0G5dgl2Xl9hFRxpyz0i+vBW+DuKlin7PrU3kabYqM0J01NpFpzu0nAnhQr6f7VUk6AXWfAel4jtPUI/MBKV4O1Gt8mIMwIluWSpOsL4CXRbTBAx7eguQegnnKqwX4ZMDSUVo0nnWVSaSfnjMR7pkui/pwG2yg21sHI8PekS5492I9K1/v2vG4T/QVZDtzfy/3TNbNJaSb0luEbscLrVxXfXvM47GC+6d3NgDWX/TYL/F6si4srAf6IVh+SqTUV9kqfbmRvHfmhAh1GW8DPpN6M2nBf2AY7D/Y266ekQ3Wgvm0aKfr+sgKsn+2DnQYrnBScHpSv2iUlJZX0ojNgQoWulF2lAHkMR944yqV7mbRVJ53DUUn1Ow8qpl9VhDzjFT3EgOMrzu2Db0+Pl+OktcOxX1DxAMAq6dqfJfiKGtSqOvOKPKsLEFh1qKq3km6c6+VAJ5vhMbDrv71WQghAJ+1nRR27+TCvU9KL/NMmu592I/biy61Gc57PImyglNnhXg04YjUwfFVLGvJistpYxu2kfYkuXp/paDkAUITq03FRIlhLI8YAr8m6hnnik4lhcwC2EslXE1/XX7kowzr7PYzqZJ0ZPZcXv+1tNk0jGv8Ofblbz6vZQ7CHbAhIj4p3UlpSMZmRl5hap0Y+4uYq0hKWCYe9o+0VQzvBhA1J5gt7N9I8yv2eGZIeGFes+H3wUyuAuC1u1EwbRn62DHDyyYylFdtissXXcbhM3DbUSY8uBtD06lZZRU3v3I6CduQ/VZ7lPsWtj9jCcvIjuk6e2xDSiz/7WinbB/UZ3YSRURqTzPVWXZJeN5i/A+AbB/jAlt8o+DEC542j65oX2c2e03hobHgWqA3QBr48wJoaOGAGc57bBzoehaAmQVKzoukTWDAlhgcM3yfOBZtQGxteR1tnKAVcnP9f/nVZzFhjRj/C9h9+rYVqOvV8sBbLDXay7E9JHn436PYfk6TNxUr0AnQ0/selwZZYbn/hVPseUtPyE+Ln5oL+CB5B3owAN+HQxuQqc+VPj5x0qpno/wpq0HxG+RMIjRgWXXTKmQAAAABJRU5ErkJggg=="/>
-                 </svg>   
-                 <svg class="page-header__logo-img page-header__logo-img--tablet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="113" height="46" viewBox="0 0 113 46">
-                   <image id="mishka-logo-tablet.svg" width="113" height="46" xlink:href="data:img/png;base64,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"/>
-                 </svg>
-                 <svg class="page-header__logo-img page-header__logo-img--desktop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="149" height="72" viewBox="0 0 149 72">
-                   <image id="mishka-logo-desktop.svg" width="149" height="72" xlink:href="data:img/png;base64,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"/>
-                 </svg>
+            <a href="./index.html" class="page-header__logo">
+                <svg class="page-header__logo-img page-header__logo-img--mobile" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="86" height="35" viewBox="0 0 86 35">
+                    <image id="mishka-logo-mobile.svg" width="86" height="35"
+                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAjCAQAAACksDUOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkCxgROgJ1P8tHAAAEBklEQVRYw+2Y0XHbOBCGP2nyHnRwvAqMDkxVEHdgpYIoFZiuwHIFSiqQUoHoCkRXYKYC8SrAPXABLEFQ4l3Oc3Mzt3wguMDu/vsT2iUEc6TghMNRzFr9brKcCdbK/T8A9r2loJxDxF8D+ykbpsTMsl5zxrFPtIY9bxwpfy1fSymvv8ThcDypuR1vonU4zlQCfo/DZUP364+J9ojDiXVKw4aKiiqybtln8kWCHkP2R+VwJ3MVlQRzODbAWsYerGGH440iwBqCrXA4TglJTwMilL+TPBYJWJdx08tTMuN5r0LwCLZUz2OwhjMOx1ppduKr38U++b0G5dgl2Xl9hFRxpyz0i+vBW+DuKlin7PrU3kabYqM0J01NpFpzu0nAnhQr6f7VUk6AXWfAel4jtPUI/MBKV4O1Gt8mIMwIluWSpOsL4CXRbTBAx7eguQegnnKqwX4ZMDSUVo0nnWVSaSfnjMR7pkui/pwG2yg21sHI8PekS5492I9K1/v2vG4T/QVZDtzfy/3TNbNJaSb0luEbscLrVxXfXvM47GC+6d3NgDWX/TYL/F6si4srAf6IVh+SqTUV9kqfbmRvHfmhAh1GW8DPpN6M2nBf2AY7D/Y266ekQ3Wgvm0aKfr+sgKsn+2DnQYrnBScHpSv2iUlJZX0ojNgQoWulF2lAHkMR944yqV7mbRVJ53DUUn1Ow8qpl9VhDzjFT3EgOMrzu2Db0+Pl+OktcOxX1DxAMAq6dqfJfiKGtSqOvOKPKsLEFh1qKq3km6c6+VAJ5vhMbDrv71WQghAJ+1nRR27+TCvU9KL/NMmu592I/biy61Gc57PImyglNnhXg04YjUwfFVLGvJistpYxu2kfYkuXp/paDkAUITq03FRIlhLI8YAr8m6hnnik4lhcwC2EslXE1/XX7kowzr7PYzqZJ0ZPZcXv+1tNk0jGv8Ofblbz6vZQ7CHbAhIj4p3UlpSMZmRl5hap0Y+4uYq0hKWCYe9o+0VQzvBhA1J5gt7N9I8yv2eGZIeGFes+H3wUyuAuC1u1EwbRn62DHDyyYylFdtissXXcbhM3DbUSY8uBtD06lZZRU3v3I6CduQ/VZ7lPsWtj9jCcvIjuk6e2xDSiz/7WinbB/UZ3YSRURqTzPVWXZJeN5i/A+AbB/jAlt8o+DEC542j65oX2c2e03hobHgWqA3QBr48wJoaOGAGc57bBzoehaAmQVKzoukTWDAlhgcM3yfOBZtQGxteR1tnKAVcnP9f/nVZzFhjRj/C9h9+rYVqOvV8sBbLDXay7E9JHn436PYfk6TNxUr0AnQ0/selwZZYbn/hVPseUtPyE+Ln5oL+CB5B3owAN+HQxuQqc+VPj5x0qpno/wpq0HxG+RMIjRgWXXTKmQAAAABJRU5ErkJggg==" />
+                </svg>
+                <svg class="page-header__logo-img page-header__logo-img--tablet" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="113" height="46" viewBox="0 0 113 46">
+                    <image id="mishka-logo-tablet.svg" width="113" height="46"
+                        xlink:href="data:img/png;base64,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" />
+                </svg>
+                <svg class="page-header__logo-img page-header__logo-img--desktop" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="149" height="72" viewBox="0 0 149 72">
+                    <image id="mishka-logo-desktop.svg" width="149" height="72"
+                        xlink:href="data:img/png;base64,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" />
+                </svg>
             </a>
             <nav class="main-nav main-nav--closed main-nav--no-js">
                 <button class="main-nav__toogle">
                 </button>
                 <div class="main-nav__wrapper">
-                   <ul class="main-nav__list site-list">
-                       <li class="site-list__item"> <a class="main-nav__link" href="./catalog.html"> Каталог товаров</a></li>
-                       <li class="site-list__item"> <a class="main-nav__link" href="./form.html"> Вязание на заказ</a></li>
-                   </ul>
-                   <ul class="main-nav__list user-list">
-                       <li class="user-list__item user-list__item--search"> <a class="main-nav__link" href=""><span>Поиск по сайту</span></a></li>
-                       <li class="user-list__item user-list__item--cart"> <a class="main-nav__link" href="">Корзина: пока пуста</a></li>
-                   </ul>
-                   <div class="main-nav__div-promo">
-                   <ul class="main-nav__list promo-list">
-                       <li class="main-nav__item  promo-list__item">
-                         <a class="main-nav__link main-nav__link--promo" href="#">Новые поступления</a>
-                       </li>
-                       <li class="main-nav__item  promo-list__item">
-                         <a class="main-nav__link main-nav__link--promo" href="#">Распродажа</a>
-                       </li>
-                     </ul>
-                     <p class="page-header__shipping">Бесплатная доставка по России</p>
-                   </div>
-               </div>
+                    <ul class="main-nav__list site-list">
+                        <li class="site-list__item"> <a class="main-nav__link" href="./catalog.html"> Каталог
+                                товаров</a></li>
+                        <li class="site-list__item"> <a class="main-nav__link" href="./form.html"> Вязание на заказ</a>
+                        </li>
+                    </ul>
+                    <ul class="main-nav__list user-list">
+                        <li class="user-list__item user-list__item--search">
+                             <a class="main-nav__link" href="">
+                                <svg class="user-list__item-svg" height="18" width="18" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                    viewBox="0 0 512.005 512.005"
+                                    xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M505.749,475.587l-145.6-145.6c28.203-34.837,45.184-79.104,45.184-127.317c0-111.744-90.923-202.667-202.667-202.667
+                                                S0,90.925,0,202.669s90.923,202.667,202.667,202.667c48.213,0,92.48-16.981,127.317-45.184l145.6,145.6
+                                                c4.16,4.16,9.621,6.251,15.083,6.251s10.923-2.091,15.083-6.251C514.091,497.411,514.091,483.928,505.749,475.587z
+                                                M202.667,362.669c-88.235,0-160-71.765-160-160s71.765-160,160-160s160,71.765,160,160S290.901,362.669,202.667,362.669z" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                                <span>Поиск по сайту</span></a>
+                        </li>
+                        <li class="user-list__item">
+                            <a class="main-nav__link" href="">
+                                <svg height="22" viewBox="0 0 512 512" width="21" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m504.399 185.065c-6.761-8.482-16.904-13.348-27.83-13.348h-98.604l-53.469-122.433c-3.315-7.591-12.157-11.06-19.749-7.743-7.592 3.315-11.059 12.158-7.743 19.75l48.225 110.427h-178.458l48.225-110.427c3.315-7.592-.151-16.434-7.743-19.75-7.591-3.317-16.434.15-19.749 7.743l-53.469 122.434h-98.604c-10.926 0-21.069 4.865-27.83 13.348-6.637 8.328-9.086 19.034-6.719 29.376l52.657 230c3.677 16.06 17.884 27.276 34.549 27.276h335.824c16.665 0 30.872-11.216 34.549-27.276l52.657-230.001c2.367-10.342-.082-21.048-6.719-29.376zm-80.487 256.652h-335.824c-2.547 0-4.778-1.67-5.305-3.972l-52.657-229.998c-.413-1.805.28-3.163.936-3.984.608-.764 1.985-2.045 4.369-2.045h85.503l-3.929 8.997c-3.315 7.592.151 16.434 7.743 19.75 1.954.854 3.99 1.258 5.995 1.258 5.782 0 11.292-3.363 13.754-9l9.173-21.003h204.662l9.173 21.003c2.462 5.638 7.972 9 13.754 9 2.004 0 4.041-.404 5.995-1.258 7.592-3.315 11.059-12.158 7.743-19.75l-3.929-8.997h85.503c2.384 0 3.761 1.281 4.369 2.045.655.822 1.349 2.18.936 3.983l-52.657 230c-.528 2.301-2.76 3.971-5.307 3.971z" />
+                                    <path
+                                        d="m166 266.717c-8.284 0-15 6.716-15 15v110c0 8.284 6.716 15 15 15s15-6.716 15-15v-110c0-8.284-6.715-15-15-15z" />
+                                    <path
+                                        d="m256 266.717c-8.284 0-15 6.716-15 15v110c0 8.284 6.716 15 15 15s15-6.716 15-15v-110c0-8.284-6.716-15-15-15z" />
+                                    <path
+                                        d="m346 266.717c-8.284 0-15 6.716-15 15v110c0 8.284 6.716 15 15 15s15-6.716 15-15v-110c-.001-8.284-6.716-15-15-15z" />
+                                    </svg>
+                                Корзина: пока пуста
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="main-nav__div-promo">
+                        <ul class="main-nav__list promo-list">
+                            <li class="main-nav__item  promo-list__item">
+                                <a class="main-nav__link main-nav__link--promo" href="#">Новые поступления</a>
+                            </li>
+                            <li class="main-nav__item  promo-list__item">
+                                <a class="main-nav__link main-nav__link--promo" href="#">Распродажа</a>
+                            </li>
+                        </ul>
+                        <p class="page-header__shipping">Бесплатная доставка по России</p>
+                    </div>
+                </div>
             </nav>
         </header>
     <main class="page-main">
@@ -55,9 +95,9 @@
         <section class="catalog">
             <div class="catalog__item product">
                 <picture>
-                    <source media="(min-width: 1050px)" srcset="./img/photo-1-desktop.png">
-                    <source media="(min-width: 768px)" srcset="./img/photo-1-tablet.png">
-                    <img src="./img/photo-1-mobile.png" alt="#" class="product__img">
+                    <source media="(min-width: 1050px)" srcset="./img/photo-1-desktop.webp">
+                    <source media="(min-width: 768px)" srcset="./img/photo-1-tablet.webp">
+                    <img src="./img/photo-1-mobile.webp" alt="#" class="product__img">
                 </picture>
                 <div class="product__info">
                     <a href="#" class="product__link">
@@ -67,17 +107,26 @@
                         </span>
                         <div class="product__bottom-block">
                     <span class="product__price">1200 p</span>
-                    <button class="product__button-buy">
-
+                    <button class="product__button-buy order-button">
+                        <svg height="20" viewBox="0 0 512 512" width="20" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m504.399 185.065c-6.761-8.482-16.904-13.348-27.83-13.348h-98.604l-53.469-122.433c-3.315-7.591-12.157-11.06-19.749-7.743-7.592 3.315-11.059 12.158-7.743 19.75l48.225 110.427h-178.458l48.225-110.427c3.315-7.592-.151-16.434-7.743-19.75-7.591-3.317-16.434.15-19.749 7.743l-53.469 122.434h-98.604c-10.926 0-21.069 4.865-27.83 13.348-6.637 8.328-9.086 19.034-6.719 29.376l52.657 230c3.677 16.06 17.884 27.276 34.549 27.276h335.824c16.665 0 30.872-11.216 34.549-27.276l52.657-230.001c2.367-10.342-.082-21.048-6.719-29.376zm-80.487 256.652h-335.824c-2.547 0-4.778-1.67-5.305-3.972l-52.657-229.998c-.413-1.805.28-3.163.936-3.984.608-.764 1.985-2.045 4.369-2.045h85.503l-3.929 8.997c-3.315 7.592.151 16.434 7.743 19.75 1.954.854 3.99 1.258 5.995 1.258 5.782 0 11.292-3.363 13.754-9l9.173-21.003h204.662l9.173 21.003c2.462 5.638 7.972 9 13.754 9 2.004 0 4.041-.404 5.995-1.258 7.592-3.315 11.059-12.158 7.743-19.75l-3.929-8.997h85.503c2.384 0 3.761 1.281 4.369 2.045.655.822 1.349 2.18.936 3.983l-52.657 230c-.528 2.301-2.76 3.971-5.307 3.971z" />
+                            <path
+                                d="m166 266.717c-8.284 0-15 6.716-15 15v110c0 8.284 6.716 15 15 15s15-6.716 15-15v-110c0-8.284-6.715-15-15-15z" />
+                            <path
+                                d="m256 266.717c-8.284 0-15 6.716-15 15v110c0 8.284 6.716 15 15 15s15-6.716 15-15v-110c0-8.284-6.716-15-15-15z" />
+                            <path
+                                d="m346 266.717c-8.284 0-15 6.716-15 15v110c0 8.284 6.716 15 15 15s15-6.716 15-15v-110c-.001-8.284-6.716-15-15-15z" />
+                            </svg>
                     </button>
                 </div>
                 </div>
             </div>
             <div class="catalog__item product">
                 <picture>
-                    <source media="(min-width: 1050px)" srcset="./img/photo-2-desktop.png">
-                    <source media="(min-width: 768px)" srcset="./img/photo-2-tablet.png">
-                    <img src="./img/photo-2-mobile.png" alt="#" class="product__img">
+                    <source media="(min-width: 1050px)" srcset="./img/photo-2-desktop.webp">
+                    <source media="(min-width: 768px)" srcset="./img/photo-2-tablet.webp">
+                    <img src="./img/photo-2-mobile.webp" alt="#" class="product__img">
                 </picture>
                 <div class="product__info">
                     <a href="#" class="product__link">
@@ -88,15 +137,26 @@
                         </span>
                         <div class="product__bottom-block">
                     <span class="product__price">690 p</span>
-                    <button class="product__button-buy"></button>
+                    <button class="product__button-buy order-button">
+                        <svg height="20" viewBox="0 0 512 512" width="20" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m504.399 185.065c-6.761-8.482-16.904-13.348-27.83-13.348h-98.604l-53.469-122.433c-3.315-7.591-12.157-11.06-19.749-7.743-7.592 3.315-11.059 12.158-7.743 19.75l48.225 110.427h-178.458l48.225-110.427c3.315-7.592-.151-16.434-7.743-19.75-7.591-3.317-16.434.15-19.749 7.743l-53.469 122.434h-98.604c-10.926 0-21.069 4.865-27.83 13.348-6.637 8.328-9.086 19.034-6.719 29.376l52.657 230c3.677 16.06 17.884 27.276 34.549 27.276h335.824c16.665 0 30.872-11.216 34.549-27.276l52.657-230.001c2.367-10.342-.082-21.048-6.719-29.376zm-80.487 256.652h-335.824c-2.547 0-4.778-1.67-5.305-3.972l-52.657-229.998c-.413-1.805.28-3.163.936-3.984.608-.764 1.985-2.045 4.369-2.045h85.503l-3.929 8.997c-3.315 7.592.151 16.434 7.743 19.75 1.954.854 3.99 1.258 5.995 1.258 5.782 0 11.292-3.363 13.754-9l9.173-21.003h204.662l9.173 21.003c2.462 5.638 7.972 9 13.754 9 2.004 0 4.041-.404 5.995-1.258 7.592-3.315 11.059-12.158 7.743-19.75l-3.929-8.997h85.503c2.384 0 3.761 1.281 4.369 2.045.655.822 1.349 2.18.936 3.983l-52.657 230c-.528 2.301-2.76 3.971-5.307 3.971z" />
+                            <path
+                                d="m166 266.717c-8.284 0-15 6.716-15 15v110c0 8.284 6.716 15 15 15s15-6.716 15-15v-110c0-8.284-6.715-15-15-15z" />
+                            <path
+                                d="m256 266.717c-8.284 0-15 6.716-15 15v110c0 8.284 6.716 15 15 15s15-6.716 15-15v-110c0-8.284-6.716-15-15-15z" />
+                            <path
+                                d="m346 266.717c-8.284 0-15 6.716-15 15v110c0 8.284 6.716 15 15 15s15-6.716 15-15v-110c-.001-8.284-6.716-15-15-15z" />
+                            </svg>
+                    </button>
                 </div>
                 </div>
             </div>
             <div class="catalog__item product">
                 <picture>
-                    <source media="(min-width: 1050px)" srcset="./img/photo-3-desktop.png">
-                    <source media="(min-width: 768px)" srcset="./img/photo-3-tablet.png">
-                    <img src="./img/photo-3-mobile.png" alt="#" class="product__img">
+                    <source media="(min-width: 1050px)" srcset="./img/photo-3-desktop.webp">
+                    <source media="(min-width: 768px)" srcset="./img/photo-3-tablet.webp">
+                    <img src="./img/photo-3-mobile.webp" alt="#" class="product__img">
                 </picture>
                 <div class="product__info">
                     <a href="#" class="product__link">
@@ -107,7 +167,18 @@
                     </span>
                     <div class="product__bottom-block">
                     <span class="product__price">1500 p</span>
-                    <button class="product__button-buy"></button>
+                    <button class="product__button-buy order-button">
+                        <svg height="20" viewBox="0 0 512 512" width="20" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m504.399 185.065c-6.761-8.482-16.904-13.348-27.83-13.348h-98.604l-53.469-122.433c-3.315-7.591-12.157-11.06-19.749-7.743-7.592 3.315-11.059 12.158-7.743 19.75l48.225 110.427h-178.458l48.225-110.427c3.315-7.592-.151-16.434-7.743-19.75-7.591-3.317-16.434.15-19.749 7.743l-53.469 122.434h-98.604c-10.926 0-21.069 4.865-27.83 13.348-6.637 8.328-9.086 19.034-6.719 29.376l52.657 230c3.677 16.06 17.884 27.276 34.549 27.276h335.824c16.665 0 30.872-11.216 34.549-27.276l52.657-230.001c2.367-10.342-.082-21.048-6.719-29.376zm-80.487 256.652h-335.824c-2.547 0-4.778-1.67-5.305-3.972l-52.657-229.998c-.413-1.805.28-3.163.936-3.984.608-.764 1.985-2.045 4.369-2.045h85.503l-3.929 8.997c-3.315 7.592.151 16.434 7.743 19.75 1.954.854 3.99 1.258 5.995 1.258 5.782 0 11.292-3.363 13.754-9l9.173-21.003h204.662l9.173 21.003c2.462 5.638 7.972 9 13.754 9 2.004 0 4.041-.404 5.995-1.258 7.592-3.315 11.059-12.158 7.743-19.75l-3.929-8.997h85.503c2.384 0 3.761 1.281 4.369 2.045.655.822 1.349 2.18.936 3.983l-52.657 230c-.528 2.301-2.76 3.971-5.307 3.971z" />
+                            <path
+                                d="m166 266.717c-8.284 0-15 6.716-15 15v110c0 8.284 6.716 15 15 15s15-6.716 15-15v-110c0-8.284-6.715-15-15-15z" />
+                            <path
+                                d="m256 266.717c-8.284 0-15 6.716-15 15v110c0 8.284 6.716 15 15 15s15-6.716 15-15v-110c0-8.284-6.716-15-15-15z" />
+                            <path
+                                d="m346 266.717c-8.284 0-15 6.716-15 15v110c0 8.284 6.716 15 15 15s15-6.716 15-15v-110c-.001-8.284-6.716-15-15-15z" />
+                            </svg>
+                    </button>
                 </div>
                 </div>
 
@@ -115,16 +186,16 @@
     </section>
     <section class="process">
         <header class="process__header">
-             <img class="process__img" src="./img/video.png" alt="#" width="32" height="22">
+             <img class="process__img" src="./img/video.webp" alt="#" width="32" height="22">
             <h3 class="process__title">Процесс производства</h3>
             </header>
-        <video  class="process__video" controls="controls" poster="./img/video-mobile.png">
+        <video  class="process__video" controls="controls" poster="./img/video-mobile.webp">
             <source src="./video/clouds.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
         </video>
         <p class="process__info">
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
         </p>
-        <button class="process__button button">Сделать заказ</button>
+        <a href="./form.html" class="process__button button">Сделать заказ</button>
     </section>
     </main>
      <footer class="page-footer">
@@ -164,6 +235,7 @@
         </form>
     </div>
     <div class="body__background hidden"></div>
-    <script src="js/app.min.js"></script>
+    <script src="js/openMenu.js"></script>
+    <script src="js/openModal.js"></script>
  </body>
  </html>

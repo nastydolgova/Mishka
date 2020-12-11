@@ -37,7 +37,7 @@ body {
   background-color: #444
 }
 .button-prev {
-  background-image: url(../img/huge-arrow-left.png);
+  background-image: url(../img/huge-arrow-left.webp);
   background-repeat: no-repeat;
   background-position: center
 }
@@ -48,7 +48,7 @@ body {
   opacity: .4
 }
 .button-next {
-  background-image: url(../img/huge-arrow-right.png);
+  background-image: url(../img/huge-arrow-right.webp);
   background-repeat: no-repeat;
   background-position: center
 }
@@ -82,7 +82,8 @@ body {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  text-align: center
+  text-align: center;
+  outline: 0
 }
 .page-header__logo-img--desktop,
 .page-header__logo-img--tablet {
@@ -148,8 +149,9 @@ body {
   }
   .page-header__logo {
     position: absolute;
-    left: 500px;
-    top: -10px
+    left: 450px;
+    top: -10px;
+    z-index: 200
   }
 }
 .main-nav {
@@ -180,7 +182,11 @@ body {
   text-decoration: none;
   font-size: 17px;
   font-weight: 700;
-  color: #000
+  color: #000;
+  outline: 0
+}
+.main-nav__link svg {
+  padding: 0 30px
 }
 .main-nav__toogle {
   width: 20px;
@@ -193,13 +199,13 @@ body {
 .main-nav__toogle {
   border: none;
   background-color: transparent;
-  background-image: url(../img/menu.png);
+  background-image: url(../img/menu.webp);
   background-repeat: no-repeat;
   background-position: center;
   outline: 0
 }
 .main-nav__toogle--close {
-  background-image: url(../img/menu-close.png)
+  background-image: url(../img/menu-close.webp)
 }
 .main-nav__link:hover {
   opacity: .7
@@ -212,16 +218,6 @@ body {
   padding: 25px 0;
   border-top: 1px solid #ececec;
   text-align: center
-}
-.user-list__item {
-  background-image: url(../img/search.png);
-  background-repeat: no-repeat;
-  background-position: 30px center
-}
-.user-list__item--cart {
-  background-image: url(../img/cart.png);
-  background-repeat: no-repeat;
-  background-position: 30px center
 }
 .page-main {
   font-family: "Open Sans",sans-serif;
@@ -242,6 +238,12 @@ body {
 }
 .page-header__shipping {
   display: none
+}
+.main-nav__link svg:hover {
+  fill: #63d1bb
+}
+.main-nav__link svg:active {
+  fill: #d0f1ea
 }
 @media (min-width:768px) {
   .main-nav__toogle {
@@ -297,13 +299,13 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    border-left: 1px solid #ececec
+    border-left: 1px solid #ececec;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
   }
   .user-list__item--search {
-    width: 80px
-  }
-  .user-list__item--cart {
-    padding-left: 80px
+    width: 80px;
+    padding-top: 50px
   }
   .user-list {
     position: absolute;
@@ -383,7 +385,7 @@ body {
 }
 .choise__header {
   padding: 0 30px;
-  background-image: url(../img/bg-choise__header.png);
+  background-image: url(../img/bg-choise__header.webp);
   background-color: #f9f9f9;
   background-repeat: no-repeat;
   background-position: center;
@@ -414,14 +416,14 @@ body {
 }
 .choise__item {
   background-color: #63d1bb;
-  background-image: url(../img/interior.png);
+  background-image: url(../img/interior.webp);
   background-repeat: no-repeat;
   background-position: 90% 22px;
   padding: 25px 30px
 }
 .choise__item--baby {
   background-color: #56c3b2;
-  background-image: url(../img/toy.png);
+  background-image: url(../img/toy.webp);
   background-position: 90% 21px
 }
 .choise__item-link {
@@ -446,7 +448,7 @@ body {
   }
   .choise__header {
     padding: 160px 50px 305px 50px;
-    background-image: url(../img/hero-desktop.png);
+    background-image: url(../img/hero-desktop.webp);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -575,7 +577,7 @@ body {
 }
 @media (min-width:768px) {
   .week-product {
-    background-image: url(../img/zigzag-fill-desktop.png);
+    background-image: url(../img/zigzag-fill-desktop.webp);
     background-position: top;
     background-repeat: repeat-x;
     margin: 0;
@@ -658,8 +660,7 @@ body {
     width: 100%;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-      padding: 0;
+    align-items: center
   }
   .week-product__header {
     width: 1050px;
@@ -694,7 +695,7 @@ body {
   }
 }
 .about {
-  background-image: url(../img/zigzag-fill-desktop.png);
+  background-image: url(../img/zigzag-fill-desktop.webp);
   background-position: top;
   background-repeat: repeat-x;
   padding: 0 30px;
@@ -805,7 +806,8 @@ body {
   color: #444;
   font-size: 15px;
   margin: 0;
-  padding-bottom: 40px
+  padding-bottom: 40px;
+  min-height: 100px
 }
 .reviews__author {
   font-weight: 700;
@@ -854,7 +856,7 @@ body {
     grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    background-image: url(../img/review.png);
+    background-image: url(../img/review.webp);
     background-repeat: no-repeat;
     background-position: left top
   }
@@ -914,7 +916,7 @@ body {
     border: none
   }
 }
-@media (min-width:768px) {
+@media (min-width:1050px) {
   .reviews {
     width: 1050px;
     padding-left: 170px;
@@ -927,7 +929,7 @@ body {
   }
 }
 .contacts {
-  background-image: url(../img/zigzag-line-desktop.png);
+  background-image: url(../img/zigzag-line-desktop.webp);
   background-repeat: repeat-x;
   background-position: top;
   padding: 45px 30px;
@@ -991,7 +993,7 @@ body {
     font-size: 43px;
     font-weight: 700;
     padding-bottom: 60px;
-    background-image: url(../img/flag.png);
+    background-image: url(../img/flag.webp);
     background-repeat: no-repeat;
     background-position: right top
   }
@@ -1174,7 +1176,7 @@ body {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    background-image: url(../img/zigzag-fill-desktop.png);
+    background-image: url(../img/zigzag-fill-desktop.webp);
     background-position: top;
     background-repeat: repeat-x;
     margin: 0;
@@ -1282,23 +1284,20 @@ body {
 .product__button-buy {
   width: 20px;
   height: 20px;
-  background-image: url(../img/cart.png);
-  background-repeat: no-repeat;
   border: none;
   background-color: transparent;
   outline: 0
+}
+.product__button-buy svg:hover {
+  fill: #63d1bb
+}
+.product__button-buy svg:active {
+  fill: #d0f1ea
 }
 .product__link:hover {
   opacity: .7
 }
 .product__link:active {
-  opacity: .5
-}
-.product__button-buy:hover {
-  background-image: url(../img/cart_blue.png)
-}
-.product__button-buy:active {
-  background-image: url(../img/cart_blue.png);
   opacity: .5
 }
 @media (min-width:768px) {
@@ -1383,7 +1382,11 @@ body {
   margin-bottom: 30px
 }
 .process__button {
-  margin: 0 35px 30px 35px
+  margin: 0 35px 30px 35px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none
 }
 @media (min-width:768px) {
   .process__header {
@@ -1430,6 +1433,7 @@ body {
     -ms-grid-rows: min-content min-content min-content;
     grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
     grid-template-rows: min-content min-content min-content;
+    margin: 0;
     margin-bottom: 105px;
     -webkit-column-gap: 70px;
     -moz-column-gap: 70px;
@@ -1584,24 +1588,24 @@ body {
   left: 0;
   width: 40px;
   height: 40px;
-  background-image: url(../img/Shape_empty.png);
+  background-image: url(../img/Shape_empty.webp);
   background-repeat: no-repeat;
   background-position: center
 }
 .form__radio-label:hover:before {
-  background-image: url(../img/Shape_empty_blue.png)
+  background-image: url(../img/Shape_empty_blue.webp)
 }
 .form__radio-label:active:before {
-  background-image: url(../img/Shape_empty_grey.png)
+  background-image: url(../img/Shape_empty_grey.webp)
 }
 .form__radio:checked + .form__radio-label:before {
-  background-image: url(../img/Shape_empty.png),url(../img/Shape_blue.png)
+  background-image: url(../img/Shape_empty.webp),url(../img/Shape_blue.webp)
 }
 .form__radio:checked + .form__radio-label:hover:before {
-  background-image: url(../img/Shape_empty_blue.png),url(../img/Shape_blue.png)
+  background-image: url(../img/Shape_empty_blue.webp),url(../img/Shape_blue.webp)
 }
 .form__radio:checked + .form__radio-label:active:before {
-  background-image: url(../img/Shape_empty_grey.png),url(../img/Shape_blue.png)
+  background-image: url(../img/Shape_empty_grey.webp),url(../img/Shape_blue.webp)
 }
 .form__checkbox-label:before {
   content: "";
@@ -1610,25 +1614,25 @@ body {
   left: 0;
   width: 40px;
   height: 40px;
-  background-image: url(../img/square.png);
+  background-image: url(../img/square.webp);
   background-repeat: no-repeat;
   top: -7px;
   background-position: center
 }
 .form__checkbox-label:hover:before {
-  background-image: url(../img/square_blue.png)
+  background-image: url(../img/square_blue.webp)
 }
 .form__checkbox-label:active:before {
-  background-image: url(../img/square_grey.png)
+  background-image: url(../img/square_grey.webp)
 }
 .form__checkbox:checked + .form__checkbox-label:before {
-  background-image: url(../img/square.png),url(../img/tick-mobile.png)
+  background-image: url(../img/square.webp),url(../img/tick-mobile.webp)
 }
 .form__checkbox:checked + .form__checkbox-label:hover:before {
-  background-image: url(../img/square_blue.png),url(../img/tick-mobile.png)
+  background-image: url(../img/square_blue.webp),url(../img/tick-mobile.webp)
 }
 .form__checkbox:checked + .form__checkbox-label:active:before {
-  background-image: url(../img/square_grey.png),url(../img/tick-mobile.png)
+  background-image: url(../img/square_grey.webp),url(../img/tick-mobile.webp)
 }
 .form__input-label {
   font: 17px;
@@ -1646,7 +1650,7 @@ body {
   border-bottom: 2px solid #89ddcb
 }
 .form__input-mail {
-  background-image: url(../img/mail.png);
+  background-image: url(../img/mail.webp);
   background-repeat: no-repeat;
   background-position: right center
 }
@@ -1660,7 +1664,7 @@ body {
   border-bottom: 2px solid #000;
   margin-bottom: 25px;
   outline: 0;
-  background-image: url(../img/phone.png);
+  background-image: url(../img/phone.webp);
   background-repeat: no-repeat;
   background-position: right center
 }
@@ -1686,7 +1690,7 @@ body {
 }
 @media (min-width:768px) {
   .form {
-    background-image: url(../img/zigzag-fill-desktop.png);
+    background-image: url(../img/zigzag-fill-desktop.webp);
     background-position: top;
     background-repeat: repeat-x;
     margin: 0;
