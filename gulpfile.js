@@ -19,7 +19,7 @@ function browsersync(){
 
 function scripts(){
     return src(
-        ['app/**/*.js']
+        ['app/**/*.js','!app/**/*.min.js']
         // какой файл
     )
     .pipe(concat('app.min.js')) 

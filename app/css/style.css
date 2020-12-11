@@ -1,21 +1,17 @@
-body {
-  min-width: 320px;
-  margin: 0;
-  position: relative
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  src: local("Open Sans"),url(../font/OpenSans-Regular.woff) format("woff")
 }
-.container {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0 auto
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  src: local("Open Sans"),url(../font/OpenSans-Bold.woff) format("woff")
 }
-.page-main {
-  border-top: 2px solid #ececec
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  src: local("Open Sans"),url(../font/OpenSans-Light.woff) format("woff")
 }
 .button {
   font-weight: 700;
@@ -405,7 +401,6 @@ body {
   margin: 0
 }
 .main-title {
-  font-family: "Open Sans",sans-serif;
   font-size: 28px;
   text-align: center
 }
@@ -1944,6 +1939,26 @@ body {
   top: 0;
   left: 0;
   opacity: .8
+}
+body {
+  min-width: 320px;
+  margin: 0;
+  position: relative
+}
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 auto;
+  font-family: 'Open Sans'
+}
+.page-main {
+  border-top: 2px solid #ececec
 }
 @media (min-width:768px) {
   body {
