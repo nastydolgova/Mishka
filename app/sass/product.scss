@@ -45,27 +45,24 @@
   .product__button-buy {
     width: 20px;
     height: 20px;
-    background-image: url(../img/cart.webp);
-    background-repeat: no-repeat;
     border: none;
     background-color: transparent;
     outline: none;
   }
   
+  .product__button-buy svg:hover{
+    fill: #63d1bb;
+  }
+
+  .product__button-buy svg:active{
+    fill: #d0f1ea;
+  }
+
   .product__link:hover {
     opacity: 0.7;
   }
   
   .product__link:active {
-    opacity: 0.5;
-  }
-  
-  .product__button-buy:hover {
-    background-image: url(../img/cart_blue.webp);
-  }
-  
-  .product__button-buy:active {
-    background-image: url(../img/cart_blue.webp);
     opacity: 0.5;
   }
   

@@ -32,6 +32,11 @@
     font-size: 17px;
     font-weight: 700;
     color: black;
+    outline: none;
+  }
+
+  .main-nav__link svg{
+    padding: 0 30px
   }
   
   .main-nav__toogle {
@@ -70,19 +75,7 @@
     border-top: 1px solid #ececec;
     text-align: center;
   }
-  
-  .user-list__item {
-    background-image: url(../img/search.webp);
-    background-repeat: no-repeat;
-    background-position: 30px center;
-  }
-  
-  .user-list__item--cart {
-    background-image: url(../img/cart.webp);
-    background-repeat: no-repeat;
-    background-position: 30px center;
-  }
-  
+
   .page-main {
     font-family: "Open Sans", sans-serif;
     display: flex;
@@ -102,6 +95,15 @@
     display: none;
   }
   
+.main-nav__link svg:hover{
+  fill: #63d1bb;
+}
+
+  .main-nav__link svg:active{
+    fill: #d0f1ea;
+  }
+  
+
   @media (min-width: 768px) {
     .main-nav__toogle {
       display: none;
@@ -139,16 +141,15 @@
         justify-content: center;
         align-items: center;
         border-left: 1px solid #ececec;
+        box-sizing: border-box;
     }
   
     .user-list__item--search{
         width: 80px;
+        padding-top: 50px
     }
   
-    .user-list__item--cart{
-        padding-left: 80px;
-    }
-  
+
     .user-list {
       position: absolute;
       top: -90px;
@@ -172,8 +173,6 @@
     .main-nav__link span {
       visibility: hidden;
     }
-
-  
   }
 
   

@@ -182,7 +182,11 @@ body {
   text-decoration: none;
   font-size: 17px;
   font-weight: 700;
-  color: #000
+  color: #000;
+  outline: 0
+}
+.main-nav__link svg {
+  padding: 0 30px
 }
 .main-nav__toogle {
   width: 20px;
@@ -215,16 +219,6 @@ body {
   border-top: 1px solid #ececec;
   text-align: center
 }
-.user-list__item {
-  background-image: url(../img/search.webp);
-  background-repeat: no-repeat;
-  background-position: 30px center
-}
-.user-list__item--cart {
-  background-image: url(../img/cart.webp);
-  background-repeat: no-repeat;
-  background-position: 30px center
-}
 .page-main {
   font-family: "Open Sans",sans-serif;
   display: -webkit-box;
@@ -244,6 +238,12 @@ body {
 }
 .page-header__shipping {
   display: none
+}
+.main-nav__link svg:hover {
+  fill: #63d1bb
+}
+.main-nav__link svg:active {
+  fill: #d0f1ea
 }
 @media (min-width:768px) {
   .main-nav__toogle {
@@ -299,13 +299,13 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    border-left: 1px solid #ececec
+    border-left: 1px solid #ececec;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
   }
   .user-list__item--search {
-    width: 80px
-  }
-  .user-list__item--cart {
-    padding-left: 80px
+    width: 80px;
+    padding-top: 50px
   }
   .user-list {
     position: absolute;
@@ -916,7 +916,7 @@ body {
     border: none
   }
 }
-@media (min-width:768px) {
+@media (min-width:1050px) {
   .reviews {
     width: 1050px;
     padding-left: 170px;
@@ -1284,23 +1284,20 @@ body {
 .product__button-buy {
   width: 20px;
   height: 20px;
-  background-image: url(../img/cart.webp);
-  background-repeat: no-repeat;
   border: none;
   background-color: transparent;
   outline: 0
+}
+.product__button-buy svg:hover {
+  fill: #63d1bb
+}
+.product__button-buy svg:active {
+  fill: #d0f1ea
 }
 .product__link:hover {
   opacity: .7
 }
 .product__link:active {
-  opacity: .5
-}
-.product__button-buy:hover {
-  background-image: url(../img/cart_blue.webp)
-}
-.product__button-buy:active {
-  background-image: url(../img/cart_blue.webp);
   opacity: .5
 }
 @media (min-width:768px) {
